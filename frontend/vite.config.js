@@ -3,7 +3,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 
 import { defineConfig } from 'vite'
 
-const scalaVersion = "3.2.0"
+const scalaVersion = "3.3.1"
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
 

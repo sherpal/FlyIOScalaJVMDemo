@@ -25,6 +25,9 @@ object Server extends cask.MainRoutes {
   @cask.get("/api")
   def hello() = "Hello World!"
 
+  @cask.get("/api/ping")
+  def ping() = "PONG"
+
   @cask.post("/api/do-thing")
   def doThing(request: cask.Request) =
     decode[SomeSharedData](request.text()) match {
