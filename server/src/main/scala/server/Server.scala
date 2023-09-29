@@ -12,7 +12,7 @@ object Server extends cask.MainRoutes {
 
   override def host: String = Option(System.getProperty("isProd"))
     .map(_.toBoolean)
-    .fold("localhost")(isProd => if isProd then "0.0.0.0" else "localhost")
+    .fold("127.0.0.1")(isProd => if isProd then "0.0.0.0" else "127.0.0.1")
 
   @cask.get("/")
   def index() =

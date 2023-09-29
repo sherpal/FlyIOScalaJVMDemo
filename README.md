@@ -16,7 +16,7 @@ It features:
 
 To run this project, you will need installed
 
-- npm (v16)
+- node.js (v16+)
 - sbt
 - a jdk 11
 
