@@ -3,7 +3,7 @@ import { createHtmlPlugin } from 'vite-plugin-html'
 
 import { defineConfig } from 'vite'
 
-const scalaVersion = "3.2.0"
+const scalaVersion = "3.3.1"
 
 export default defineConfig(({ command, mode, ssrBuild }) => {
 
@@ -27,7 +27,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
             port: 3000,
             proxy: {
                 "/api": {
-                    target: "http://localhost:9000"
+                    target: "http://127.0.0.1:9000"
                 }
             }
         },
